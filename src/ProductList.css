@@ -162,15 +162,36 @@ body {
 }
 .cart{
     color: white;
-    display: flex;
+    display: inline-block;
+    position: relative;
+    
 }
+
+.cart-number {
+    position: absolute;
+    top: 40%; /* Moves the number down by half its parent's height */
+    left: 45%; /* Moves the number to the right by half its parent's width */
+    transform: translate(-50%, -50%); /* Shifts the number back by half its own width and height, centering it */
+    background-color: transparent; /* Add a contrasting background color */
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 18px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cart_quantity_count{
     margin-top: 16px;
     /* background-color: red; */
     margin-left: 27px;
     position: absolute;
     font-size: 29px;
-
+    color: white;
+     
 }
 .plantname_heading{
    display: flex;
